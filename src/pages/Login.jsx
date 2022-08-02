@@ -71,7 +71,7 @@ function Login(props) {
   return (
     <div>
       <div className="login_logo" />
-
+      <h1 className='aunicalabs' >Labs</h1>
       <div className="login_wrapper">
         <div className="login_wrapper-inner">
           <div id="login_button_container" className="form_column">
@@ -117,7 +117,7 @@ function Login(props) {
             </div>
           </div>
 
-          <div className="bot_column" />
+          {/* <div className="bot_column" /> */}
         </div>
         <div className="login_credentials_wrap">
           <div className="login_credentials_wrap-inner">

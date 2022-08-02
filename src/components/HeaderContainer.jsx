@@ -60,7 +60,8 @@ const HeaderContainer = ({
           <DrawerMenu />
         </div>
         <div className="header_label">
-          <div className="app_logo" /> SITEZAO SWAG
+          <div className="app_logo" />
+          Labs
         </div>
         <div id="shopping_cart_container" className="shopping_cart_container">
           <CartButton />

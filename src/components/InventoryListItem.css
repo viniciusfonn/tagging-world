@@ -10,11 +10,13 @@
 .inventory_item_img {
   flex: 1;
 }
+
 .inventory_item_img a {
   display: block;
   height: 100%;
   width: 100%;
 }
+
 .inventory_item_img img {
   height: 100%;
   width: 100%;
@@ -28,22 +30,25 @@
   justify-content: space-between;
 }
 
-.inventory_item_label > a {
+.inventory_item_label>a {
   color: #4a4a4a;
   text-decoration: none;
 }
+
 .inventory_item_name {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 500;
-  color: #e2231a;
+  color: black;
 }
+
 .inventory_item_desc {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-top: 7px;
   color: #777777;
 }
+
 .pricebar {
   display: flex;
   justify-content: space-between;
@@ -52,7 +57,7 @@
 
 .inventory_item_price {
   border-top: 2px solid #ededef;
-  color: #e2231a;
+  color: black;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 22px;
   display: inline-block;

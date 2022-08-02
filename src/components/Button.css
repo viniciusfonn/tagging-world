@@ -11,8 +11,8 @@
 }
 
 .btn_primary {
-  border: 2px solid #e2231a;
-  color: #e2231a;
+  border: 2px solid black;
+  color: black;
   background-color: #fff;
 }
 
@@ -23,8 +23,8 @@
 }
 
 .btn_action {
-  background-color: #e2231a;
-  border: 2px solid #e2231a;
+  background-color: #000000;
+  border: 2px solid #000000;
   color: #fff;
 }
 
@@ -53,6 +53,7 @@
 }
 
 @media only screen and (max-width: 900px) {
+
   .btn_small,
   .btn_medium,
   .btn_large {

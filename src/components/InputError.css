@@ -2,6 +2,7 @@
   margin-bottom: 15px;
   position: relative;
 }
+
 .input_error {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -26,9 +27,9 @@
 
 /* Chrome/Opera/Safari */
 .form_input::-webkit-input-placeholder,
-    /* Firefox 19+ */
+/* Firefox 19+ */
 .form_input::-moz-placeholder,
-    /* IE 10+ */
+/* IE 10+ */
 .form_input:-ms-input-placeholder,
 .form_input::placeholder {
   color: #c1c7c6;
@@ -36,9 +37,9 @@
 
 /* Chrome/Opera/Safari */
 .form_input.error::-webkit-input-placeholder,
-    /* Firefox 19+ */
+/* Firefox 19+ */
 .form_input.error::-moz-placeholder,
-    /* IE 10+ */
+/* IE 10+ */
 .form_input.error:-ms-input-placeholder,
 .form_input.error::placeholder {
   color: #e2231a !important;

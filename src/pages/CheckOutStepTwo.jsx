@@ -32,7 +32,7 @@ const CheckOutStepTwo = ({ history }) => {
   }
 
   const orderTax = (orderTotal * 0.08).toFixed(2);
-
+  const VinItemArray = [];
   return (
     <div id="page_wrapper" className="page_wrapper">
       <div id="contents_wrapper">
@@ -46,7 +46,11 @@ const CheckOutStepTwo = ({ history }) => {
               <div className="cart_quantity_label">QTY</div>
               <div className="cart_desc_label">DESCRIPTION</div>
               {contents.map((item, i) => {
+
+                // console.log(InventoryData[item])
+                VinItemArray.push(InventoryData[item])
                 return <CartItem key={i} item={InventoryData[item]} />;
+
               })}
             </div>
             <div className="summary_info">
@@ -81,6 +85,8 @@ const CheckOutStepTwo = ({ history }) => {
                   customClass="cart_button"
                   label="Finish"
                   onClick={(evt) => {
+                    console.log('oi')
+                    console.log(VinItemArray)
                     evt.preventDefault();
                     clearCart();
                     history.push(ROUTES.CHECKOUT_COMPLETE);
@@ -98,6 +104,9 @@ const CheckOutStepTwo = ({ history }) => {
     </div>
   );
 };
+
+
+
 CheckOutStepTwo.propTypes = {
   /**
    * The history
