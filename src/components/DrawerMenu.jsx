@@ -17,8 +17,8 @@ const DrawerMenu = ({ history }) => {
     ShoppingCart.resetCart();
   };
   const aboutLink = isProblemUser()
-    ? "https://saucelabs.com/error/404"
-    : "https://saucelabs.com/";
+    ? "http://www.aunica.com/404"
+    : "http://www.aunica.com";
 
   return (
     <Menu

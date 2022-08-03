@@ -6,7 +6,7 @@ const SwagLabsFooter = () => {
   return (
     <footer className="footer">
       <ul className="social">
-        <li className="social_twitter">
+        {/* <li className="social_twitter">
           <a
             href="https://twitter.com/saucelabs"
             target="_blank"
@@ -14,10 +14,10 @@ const SwagLabsFooter = () => {
           >
             Twitter
           </a>
-        </li>
+        </li> */}
         <li className="social_facebook">
           <a
-            href="https://www.facebook.com/saucelabs"
+            href="https://www.facebook.com/aunicainteractive"
             target="_blank"
             rel="noreferrer"
           >
@@ -26,7 +26,7 @@ const SwagLabsFooter = () => {
         </li>
         <li className="social_linkedin">
           <a
-            href="https://www.linkedin.com/company/sauce-labs/"
+            href="https://www.linkedin.com/company/aunicainteractive/"
             target="_blank"
             rel="noreferrer"
           >
@@ -36,10 +36,10 @@ const SwagLabsFooter = () => {
       </ul>
 
       <div className="footer_copy">
-        &copy; {new Date().getFullYear()} Sauce Labs. All Rights Reserved. Terms
+        &copy; {new Date().getFullYear()} Aunica. All Rights Reserved. Terms
         of Service | Privacy Policy
       </div>
-      <img alt="Swag Bot Footer" className="footer_robot" src={SwagBotFooter} />
+      {/* <img alt="Swag Bot Footer" className="footer_robot" src={SwagBotFooter} /> */}
     </footer>
   );
 };

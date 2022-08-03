@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
-import { isPerformanceGlitchUser, isProblemUser } from "../utils/Credentials";
+import { isPerformanceGlitchUser, isProblemUser, loggedUser, loggedUserTMSID } from "../utils/Credentials";
 import { InventoryData } from "../utils/InventoryData.js";
 import InventoryListItem from "../components/InventoryListItem";
 import SwagLabsFooter from "../components/Footer";
@@ -9,7 +9,34 @@ import { sortAsc, sortDesc, sortHiLo, sortLoHi } from "../utils/Sorting";
 import Select from "../components/Select";
 import "./Inventory.css";
 
+
+
+import TagManager from 'react-gtm-module'
+import { useEffect } from "react";
+
+
+
+
+
 const Inventory = () => {
+
+  useEffect(() => {
+    const LoggedUser = loggedUser();
+
+
+
+
+    if (LoggedUser !== 'standard_user') {
+      const LoggedUserWithTMSID = loggedUserTMSID()
+      console.log(LoggedUserWithTMSID.user);
+      console.log(LoggedUserWithTMSID.TMSID);
+      const tagManagerArgs = {
+        gtmId: LoggedUserWithTMSID.TMSID,
+      }
+      TagManager.initialize(tagManagerArgs)
+
+    }
+  }, []);
 
   window.dataLayer.push({
     event: 'pageview',

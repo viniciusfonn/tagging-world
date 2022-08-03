@@ -158,7 +158,7 @@ const InventoryItem = (props) => {
                 <div className="inventory_details_desc large_size">
                   {item.desc}
                 </div>
-                <div className="inventory_details_price">${item.price}</div>
+                <div className="inventory_details_price">R${item.price}</div>
                 <ButtonType
                   id={item.id}
                   itemInCart={itemInCart}

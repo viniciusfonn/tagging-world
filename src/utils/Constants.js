@@ -1,11 +1,20 @@
 export const FONT_FAMILY = "Roboto, Arial, Helvetica, sans-serif";
 export const VALID_USERNAMES = [
   "standard_user",
-  "locked_out_user",
-  "problem_user",
-  "performance_glitch_user",
+  "aunica",
+  "aunica2"
+  // "locked_out_user",
+  // "problem_user",
+  // "performance_glitch_user",
 ];
-export const VALID_PASSWORD = "secret_sauce";
+export const VALID_USERS_WITH_TMS = [
+
+  { user: 'aunica', TMSID: 'GTM-NJ7DLSZ' },
+  { user: 'aunica2', TMSID: 'xpto' },
+
+]
+
+export const VALID_PASSWORD = "senha123";
 export const ROUTES = {
   LOGIN: "/",
   INVENTORY: "/inventory.html",

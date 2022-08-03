@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import { SESSION_USERNAME, VALID_PASSWORD, VALID_USERNAMES } from "./Constants";
+import { SESSION_USERNAME, VALID_PASSWORD, VALID_USERNAMES, VALID_USERS_WITH_TMS } from "./Constants";
 
 /**
  * Verify the credentials
@@ -75,4 +75,17 @@ export function isLoggedIn() {
   const isValidUsername = VALID_USERNAMES.includes(sessionUsername);
 
   return isValidUsername && sessionUsername !== "locked_out_user";
+}
+
+export function loggedUser() {
+  return Cookies.get(SESSION_USERNAME);
+}
+
+export function loggedUserTMSID() {
+  const loggedUser = Cookies.get(SESSION_USERNAME);
+
+  const TMSid = VALID_USERS_WITH_TMS.find(user => user.user === loggedUser);
+
+  return TMSid
+
 }

@@ -46,7 +46,7 @@ const CartItem = ({ item, history, showButton }) => {
           </a>
           <div className="inventory_item_desc">{desc}</div>
           <div className="item_pricebar">
-            <div className="inventory_item_price">${price}</div>
+            <div className="inventory_item_price">R${price}</div>
             {showButton && (
               <Button
                 customClass="cart_button"

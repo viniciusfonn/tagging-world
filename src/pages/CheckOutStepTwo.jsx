@@ -61,11 +61,11 @@ const CheckOutStepTwo = ({ history }) => {
                 FREE PONY EXPRESS DELIVERY!
               </div>
               <div className="summary_subtotal_label">
-                Item total: ${orderTotal}
+                Item total: R${orderTotal}
               </div>
-              <div className="summary_tax_label">Tax: ${orderTax}</div>
+              <div className="summary_tax_label">Tax: R${orderTax}</div>
               <div className="summary_total_label">
-                Total: ${(orderTotal + parseFloat(orderTax)).toFixed(2)}
+                Total: R${(orderTotal + parseFloat(orderTax)).toFixed(2)}
               </div>
               <div className="cart_footer">
                 <Button

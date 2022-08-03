@@ -136,7 +136,7 @@ const InventoryListItem = (props) => {
           <div className="inventory_item_desc">{desc}</div>
         </div>
         <div className="pricebar">
-          <div className="inventory_item_price">${price}</div>
+          <div className="inventory_item_price">R${price}</div>
           <ButtonType id={id} itemInCart={itemInCart} item={name} price={price} />
         </div>
       </div>

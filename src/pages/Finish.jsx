@@ -22,7 +22,6 @@ const Finish = ({ history }) => {
             Your order has been dispatched, and will arrive just as fast as the
             pony can get there!
           </div>
-          <img alt="Pony Express" className="pony_express" src={PonyExpress} />
           <Button
             label="Back Home"
             onClick={() => history.push(ROUTES.INVENTORY)}

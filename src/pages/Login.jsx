@@ -119,25 +119,18 @@ function Login(props) {
 
           {/* <div className="bot_column" /> */}
         </div>
-        <div className="login_credentials_wrap">
+        {/* <div className="login_credentials_wrap">
           <div className="login_credentials_wrap-inner">
             <div id="login_credentials" className="login_credentials">
               <h4>Accepted usernames are:</h4>
               standard_user
-              <br />
-              locked_out_user
-              <br />
-              problem_user
-              <br />
-              performance_glitch_user
-              <br />
             </div>
             <div className="login_password">
               <h4>Password for all users:</h4>
               secret_sauce
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
