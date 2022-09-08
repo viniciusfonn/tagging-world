@@ -1,8 +1,8 @@
 {
   "name": "sample-app-web",
-  "homepage": "https://viniciusfonn.github.io/tagging-world/v1/",
-  "version": "3.0.0",
-  "private": true,
+  "homepage": "https://viniciusfonn.github.io/",
+  "version": "4.0.0",
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",

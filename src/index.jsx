@@ -21,7 +21,7 @@ import PrivateRoute from "./components/PrivateRoute";
 
 import TagManager from 'react-gtm-module'
 const tagManagerArgs = {
-  gtmId: 'GTM-WNXTFKK',
+  gtmId: 'GTM-TSL9WK6',
 }
 TagManager.initialize(tagManagerArgs)
 
