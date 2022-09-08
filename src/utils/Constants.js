@@ -2,7 +2,8 @@ export const FONT_FAMILY = "Roboto, Arial, Helvetica, sans-serif";
 export const VALID_USERNAMES = [
   "standard_user",
   "aunica",
-  "aunica2"
+  "aunica2",
+  "alice"
   // "locked_out_user",
   // "problem_user",
   // "performance_glitch_user",
@@ -11,6 +12,8 @@ export const VALID_USERS_WITH_TMS = [
 
   { user: 'aunica', TMSID: 'GTM-NJ7DLSZ' },
   { user: 'aunica2', TMSID: 'xpto' },
+  { user: 'alice', TMSID: 'GTM-TSL9WK6' },
+
 
 ]
 
